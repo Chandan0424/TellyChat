@@ -6,3 +6,10 @@
 body{
     background-color: #cc9c9c;
 }
+#user_name{
+    
+    width:500px
+}
+title{
+    background-image: url("Chaticon.png");
+}
