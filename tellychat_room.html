@@ -10,7 +10,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="tellychat.css">
+<link rel="stylesheet" type="text/css" href="tellychat_room.css">
 
     </head>
 
@@ -18,9 +18,22 @@
         <button id="p" class="btn btn-danger">LogOut</button>
 
         <center>
-          <img src="Chaticon.png">
-          <h1 id="user"></h1>
+            <h1 class="header" id="head">	
+                Telly Chat
+                <sup>
+                    <img src="Chaticon.png">
+                </sup>
+
+          <h1 id="user" class="user"></h1>
+
+          <input type="text" id="roomname" class="form-control" placeholder="Enter RoomName">
+          <button class="btn btn-primary s">Add Room Name</button>
+
+          <h3 class="user">#TRENDINGROOMS</h3>
+		<div id="output"></div>
         </center>
+
+        <script src="tellychat_room.js"></script>
     </body>
 
 </html>
