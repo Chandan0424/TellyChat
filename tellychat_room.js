@@ -23,7 +23,7 @@ function addRoom(){
         purpose:"adding room name",
         name:roomName
   })
-  //window.location="tellychat_page.html"
+    window.location="tellychat_page.html"
 }
 
 function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
@@ -37,7 +37,7 @@ getData();
 function redirectToRoomName(Name){
    console.log(Name);
    localStorage.setItem("roomName",Name);
- //window.location="tellychat_page.html"
+   window.location="tellychat_page.html"
 }
 
 function logout(){
